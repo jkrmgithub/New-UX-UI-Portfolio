@@ -1,0 +1,213 @@
+:root {
+    --background-white: #F6F6F6;
+    --text1: #2A2A2A;
+    --text2: #3D3D3D;
+    --main-colour: #BD5D48;
+    --secondary-colour: #C46550;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    color: var(--text1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* NAV BAR */
+
+.customNav {
+    background-color: var(--main-colour) !important;
+}
+
+.bold-logo{
+    font-weight: bold;
+
+}
+
+.navbar-nav > li > a,
+.navbar-brand,
+.bold-logo {
+    color: var(--background-white) !important;
+}
+.text-align-center{
+    text-align: center;
+}
+
+/* MY HERO SECTION */
+
+nav{
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.my-hero{
+    margin-top: 5rem;
+}
+
+.my-img{
+    border-radius: 50rem;
+    border: .2rem #2a2a2a solid;
+    margin-left: 12rem;
+}
+
+.website-button{
+    color: var(--main-colour);
+    border: solid 2px var(--main-colour);
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+}
+
+.website-button:hover{
+    color: var(--background-white);
+    background-color: var(--main-colour);
+    transition: all .4s ease;
+}
+
+
+
+/* CURRENTLY WORKING ON SECTION */
+
+.currently-working-on{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.details-button{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+/* PROJECTS */
+
+.mp-1,
+.mp-2{
+    margin-top: 3rem;
+}
+
+.mp-2{
+    margin-bottom: 5rem;
+}
+
+.british-hedgehod-preservation-society-img{
+    margin-left: 2rem;
+}
+
+.margin-top{
+    margin-top: 3rem;
+}
+
+/* BHPS SECTION */
+
+.final-product-img{
+    margin-left: 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    .customNav {
+        background-color: black !important;
+    }
+
+    /* HOME */
+    .my-hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .my-img{
+        margin-left: 0;
+    }
+    
+    .cwo-1,
+    .bhps-summary,
+    .bhps-main-research,
+    .bhps-usability-testing,
+    .bhps-final-product{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cwo-2,
+    .bhps-understanding-the-problem,
+    .bhps-ideation-stage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .details-button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-img{
+        height: 20rem;
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    /* PROJECTS */
+
+    .mp-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mp-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .british-hedgehod-preservation-society-img,
+    .us-dof-img,
+    .final-product-img {
+        margin: 2rem 0;
+    }    
+
+}
+
+
+@media (max-width: 800px) {
+    .customNav {
+        background-color: orange !important;
+    }
+    .my-img{
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .cwo-1 > div,
+    .cwo-2 > div,
+    .mp-1 > div,
+    .mp-2 > div,
+    .bhps-text{
+        width: 100%;
+    }
+    .us-dof-img {
+        width: 50%;
+    }
+
+    .survey-imgs{
+        width: 7rem; 
+    }
+    .survey-imgs > img{
+        width: 25rem; 
+    }
+}
+
